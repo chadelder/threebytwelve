@@ -7,7 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+
+  "author": "chad jerome elder",
+  "engines": {
+    "node": "5.7.0"
+  },
+
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.4",
@@ -17,8 +22,5 @@
     "install": "^0.8.8",
     "mongoose": "^4.10.1",
     "npm": "^4.5.0"
-  },
-  "engines": {
-    "node": "5.7.0"
-  },
+  }
 }
