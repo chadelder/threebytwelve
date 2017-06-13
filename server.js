@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 //Connect to mongoose
 //mongoose.connect('mongodb://localhost:27017/threebytwelve');
 mongoose.connect('mongodb:chud:chud@ds125262.mlab.com:25262/threebytwelve')
-var db = mongoose.connection;
+//var db = mongoose.connection;
 
 // Get Posts
 app.get('/api/testget', function(req, res) {
