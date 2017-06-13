@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
-//var mongoose = require('mongoose');
+var mongoose = require('mongoose');
+var config = require('./config/database');
 var bodyParser = require('body-parser');
 
 
@@ -13,6 +14,7 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 
 //Connect to mongoose
+mongoose.connect(config.database);
 //mongoose.connect('mongodb://localhost:27017/threebytwelve');
 //mongoose.connect('mongodb:chud:chud@ds125262.mlab.com:25262/threebytwelve')
 //var db = mongoose.connection;
