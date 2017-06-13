@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row" ng-init="get2Cents()">
+    <div class="col-md-3 col-md-offset-4">
+      <a ui-sref="main" class="mainpage">Main Page</a><br>
+        <select class="filter" ng-model="selectedName" ng-options="x.click for x in months">
+          <option value="" selected="selected">Filter</option>
+        </select>
+        <button ng-click="reset()" type="submit" class="btn btn-default reset">Reset</button>
+          <p ng-show="selectedName">Artist: {{selectedName.artist}}</p>
+          <p ng-show="selectedName">Album: {{selectedName.album}}</p>
+          <p ng-show="sleectedName">Date Created: {{selectedName.create_date}}</p>
+    </div>
+  </div>
+
+    <div>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-4">
+          <div ng-model="selectedName" ng-repeat="three in months">
+            <div>
+              <p>Handle: {{three.handle}}</p>
+              <p>Artist: {{three.artist}}</p>
+              <p>Album: {{three.album}}</p>
+              <p>Click: {{three.click}}</p>
+              <p>Small Blurb: {{three.text}}</p>
+              <p>Date Created: {{three.create_date}}</p><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

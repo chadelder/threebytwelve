@@ -1,0 +1,114 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="topBorder">
+        <div>
+          <h1 class="headerText">Three by Twelve</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12" style="text-align:center;">
+      <h2>05/01/2017</h2>
+    </div>
+  </div>
+
+  <div class="row row-eq-height">
+    <div class="col-md-4">
+      <div class="leftMidDiv">
+        <div>
+          <img src="./libraries/css/pics/rr.jpg" class="artist1 center-block">
+        </div>
+        <div>
+          <h4>Artist: Rhodes Rollins</h4>
+          <h4>Album: Young Adult</h4>
+          <h4>Click: Alternative</h4>
+          <p>This girl is really talented. I'm fairly certain she writes all her own music. There isn't a lot of info on her,
+          but she definitly has a vision and can write down some damn good lyrics, and if you plan on being a singer songwriter
+          that is a big piece.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="leftMidDiv">
+        <div>
+          <img src="./libraries/css/pics/mastodon.jpeg" class="artist2 center-block">
+        </div>
+        <div>
+          <h4>Artist: Mastodon</h4>
+          <h4>Album: Emperor of Sand</h4>
+          <h4>Click: Metal</h4>
+          <p>There is a lot of different opinions about Mastodon. I think there awesome, I'm 45 and grew up on metal and punk.  By the
+            time most bands make there fouth album the done, the magic is gone.  These guys truly believe in what there doing, and it would seem like
+            they really enjoy and care about one another.  That chemistry allows them to keep producing music that keeps progressing. This
+            is no different.
+          </thead></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="leftMidDiv">
+        <div>
+          <img src="./libraries/css/pics/air.jpg" class="artist1 center-block">
+        </div>
+        <div>
+          <h4>Artist: Air</h4>
+          <h4>Album: Talkie Walkie</h4>
+          <h4>Click: Electronica</h4>
+          <p>Through the years I have heard Air on and off, but I never found, or heard anything that really hit home.  Sometimes you just keep missing the mark.
+             I was listening to some random songs on iTunes and Cheery Blossom Girl came on.  Looked up the album it was off of, and that was it.  This album is really
+             good. It incorporates so many different elements of alternative and electronic styles and melds them into a really interseting listen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="choose">
+        <div>
+          <h3>Jump to <a ui-sref="page1" class="select">The List</a> or add your own below.</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- from input -->
+  <div class="row">
+    <div class="col-md-3 col-md-offset-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">2 Cents</h3>
+        </div>
+        <div class="panel-body">
+          <form ng-submit="post2Cents()">
+          <div class="form-group">
+            <input type="text" class="form-control" ng-model="three.handle" placeholder="You're Handle">
+            <input type="text" class="form-control" ng-model="three.artist" placeholder="Artist">
+            <input type="text" class="form-control" ng-model="three.album" placeholder="Album">
+              <select type="dropdown" class="form-control drop" ng-model="three.click">
+                <option value="" selected>Click</option>
+                <option>Alternative</option>
+                <option>Electronic</option>
+                <option>Jazz</option>
+                <option>Metal</option>
+                <option>World</option>
+                <option>Other</option>
+              </select>
+            <label for="name" class="tinyBlurb">Tiny Blurb</label>
+            <textarea class="form-control" rows="3" ng-model="three.text"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--a ui-sref="page1">The List</a>
+<a ui-sref="page2">page2</a-->
