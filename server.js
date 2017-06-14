@@ -14,20 +14,10 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 
 //Connect to mongoose
-var mongodb = require('mongodb');
-var MongoClient = mongodb.MongoClient;
-MongoClient.connect(url, function (err, db) {
-  if (err) {
-    console.log('Unable to connect to the mongoDB server. Error:', err);
-  } else {
-    console.log('Connection established to', url);
-    db.close();
-export MONGOLAB_URI="mongodb:chud:jerome@ds125262.mlab.com:25262/threebytwelve";
-var url = provess.env.MONGOLAB_URI;
 //mongoose.connect(config.database);
 //mongoose.connect('mongodb://localhost:27017/threebytwelve');
-//mongoURI = 'mongodb:chud:jerome@ds125262.mlab.com:25262/threebytwelve';
-//mongoose.connect(process.env.MONGOLAB_URI || mongoURI);
+mongoURI = 'mongodb:chud:jerome@ds125262.mlab.com:25262/threebytwelve';
+mongoose.connect(process.env.MONGOLAB_URI || mongoURI);
 
 //var db = mongoose.connection;
 
