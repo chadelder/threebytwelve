@@ -15,9 +15,10 @@ app.use(bodyParser.json());
 
 //Connect to mongoose
 //mongoose.connect(config.database);
-mongoURI = 'mongodb:chud:jerome@ds125262.mlab.com:25262/threebytwelve';
+mongoose.connect('mongodb://localhost:27017/threebytwelve');
+//mongoURI = 'mongodb:chud:jerome@ds125262.mlab.com:25262/threebytwelve';
 mongoose.connect(process.env.MONGOLAB_URI || mongoURI);
-//mongoose.connect('mongodb://localhost:27017/threebytwelve');
+
 //var db = mongoose.connection;
 
 // Get Posts
